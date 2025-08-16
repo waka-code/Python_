@@ -188,19 +188,6 @@ Para probar la API:
 9. Tipado estático: Type hints en todo el código
 10. Paginación segura: Límites y validaciones
 
-## Producción
-
-Para producción, considera:
-
-1. Usar un servidor ASGI como Gunicorn + Uvicorn
-2. Configurar un proxy reverso (Nginx)
-3. Implementar autenticación y autorización
-4. Usar MongoDB Atlas o cluster dedicado
-5. Configurar monitoring y métricas
-6. Implementar rate limiting
-7. Usar HTTPS
-8. Configurar CORS específicos
-
 DB mongo
 shenryvladimil
 ofuvzitMI9psOBrB
