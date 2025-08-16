@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URL=mongodb+srv://shenryvladimil:ofuvzitMI9psOBrB@cluster0.nsx1xav.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - DATABASE_NAME=fastapi_db
+      - API_TITLE=FastAPI CRUD con MongoDB Atlas
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./logs:/app/logs
