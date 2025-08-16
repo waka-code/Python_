@@ -1,34 +1,34 @@
-# FastAPI CRUD + MongoDB Atlas - ✅ FUNCIONANDO
+# FastAPI CRUD + MongoDB Atlas
 
 API RESTful completa con FastAPI, MongoDB Atlas y mejores prácticas de desarrollo.
 
-## 🎉 **ESTADO ACTUAL: COMPLETAMENTE FUNCIONAL**
+## ESTADO ACTUAL: COMPLETAMENTE FUNCIONAL
 
-✅ **MongoDB Atlas conectado** - Base de datos en la nube  
-✅ **API ejecutándose** - http://localhost:8000  
-✅ **Documentación disponible** - http://localhost:8000/docs  
-✅ **Health check activo** - http://localhost:8000/health  
-✅ **Todas las dependencias instaladas**  
-✅ **Pydantic v2 compatible**
+MongoDB Atlas conectado - Base de datos en la nube  
+API ejecutándose - http://localhost:8000  
+Documentación disponible - http://localhost:8000/docs  
+Health check activo - http://localhost:8000/health  
+Todas las dependencias instaladas  
+Pydantic v2 compatible
 
 ---
 
-## 🚀 Características
+## Características
 
-- ✅ CRUD completo asíncrono con MongoDB Atlas
-- ✅ Validación avanzada con Pydantic
-- ✅ Gestión de conexiones seguras a la nube
-- ✅ Manejo global de excepciones
-- ✅ Logging estructurado
-- ✅ Configuración por variables de entorno
-- ✅ Middleware CORS configurado
-- ✅ Documentación automática (Swagger/ReDoc)
-- ✅ Endpoints de health check
-- ✅ Paginación con límites
-- ✅ Validaciones de entrada robustas
-- ✅ Conexión optimizada para MongoDB Atlas
+- CRUD completo asíncrono con MongoDB Atlas
+- Validación avanzada con Pydantic
+- Gestión de conexiones seguras a la nube
+- Manejo global de excepciones
+- Logging estructurado
+- Configuración por variables de entorno
+- Middleware CORS configurado
+- Documentación automática (Swagger/ReDoc)
+- Endpoints de health check
+- Paginación con límites
+- Validaciones de entrada robustas
+- Conexión optimizada para MongoDB Atlas
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 .
@@ -50,7 +50,7 @@ API RESTful completa con FastAPI, MongoDB Atlas y mejores prácticas de desarrol
 └── README.md          # Este archivo
 ```
 
-## 🔧 Instalación y Configuración
+## Instalación y Configuración
 
 ### 1. Instalar Python
 Asegúrate de tener Python 3.8+ instalado. Puedes descargarlo desde https://python.org
@@ -69,8 +69,8 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-### 4. ✅ Base de Datos Configurada
-**¡MongoDB Atlas ya está configurado!** 
+### 4. Base de Datos Configurada
+¡MongoDB Atlas ya está configurado! 
 - URL de conexión: `mongodb+srv://cluster0.nsx1xav.mongodb.net/`
 - Base de datos: `fastapi_db`
 - Variables de entorno ya están en `.env`
@@ -81,18 +81,18 @@ pip install -r requirements.txt
 python test_connection.py
 ```
 
-## 🚀 Ejecutar la Aplicación
+## Ejecutar la Aplicación
 
 ```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-**¡La aplicación estará disponible en:**
+La aplicación estará disponible en:
 - API: http://localhost:8000/api/v1/items/
 - Documentación: http://localhost:8000/docs
 - Health Check: http://localhost:8000/health
 
-## 📚 Endpoints de la API
+## Endpoints de la API
 
 ### Base URL: `http://localhost:8000/api/v1`
 
@@ -109,10 +109,10 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 ### Documentación Interactiva
 
-- **Swagger UI**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
+- Swagger UI: http://localhost:8000/docs
+- ReDoc: http://localhost:8000/redoc
 
-## 🔍 Ejemplos de Uso
+## Ejemplos de Uso
 
 ### Crear un item
 ```bash
@@ -133,9 +133,9 @@ curl -X PUT "http://localhost:8000/api/v1/items/{id}" \
   -d '{"name": "Nombre actualizado"}'
 ```
 
-## ⚙️ Configuración MongoDB Atlas
+## Configuración MongoDB Atlas
 
-### Variables de Entorno (.env) - ✅ YA CONFIGURADAS
+### Variables de Entorno (.env) - YA CONFIGURADAS
 
 ```env
 # MongoDB Atlas - Configuración en la nube
@@ -155,19 +155,19 @@ LOG_LEVEL=INFO
 ```
 
 ### Características de la conexión Atlas:
-- ✅ **Conexión segura SSL/TLS**
-- ✅ **Pool de conexiones optimizado** (min: 1, max: 10)
-- ✅ **Timeouts configurados** para mejor rendimiento
-- ✅ **Retry automático** para escrituras
-- ✅ **Verificación de ping** al conectar
+- Conexión segura SSL/TLS
+- Pool de conexiones optimizado (min: 1, max: 10)
+- Timeouts configurados para mejor rendimiento
+- Retry automático para escrituras
+- Verificación de ping al conectar
 
 ### Logging
 
 Los logs se guardan en:
-- **Consola**: Todos los niveles
-- **Archivo**: `logs/app.log`
+- Consola: Todos los niveles
+- Archivo: `logs/app.log`
 
-## 🧪 Testing
+## Testing
 
 Para probar la API:
 
@@ -175,20 +175,20 @@ Para probar la API:
 2. Visitar http://localhost:8000/docs
 3. Usar la interfaz Swagger para probar endpoints
 
-## 🏗️ Mejores Prácticas Implementadas
+## Mejores Prácticas Implementadas
 
-1. **Separación de responsabilidades**: Cada módulo tiene una función específica
-2. **Manejo asíncrono**: Todas las operaciones de BD son async/await
-3. **Validación robusta**: Pydantic con validadores personalizados
-4. **Gestión de conexiones**: Conexión/desconexión correcta a MongoDB
-5. **Manejo de errores**: Excepciones personalizadas y globales
-6. **Configuración centralizada**: Variables de entorno y settings
-7. **Logging estructurado**: Logs en archivo y consola
-8. **Documentación**: Docstrings y documentación automática
-9. **Tipado estático**: Type hints en todo el código
-10. **Paginación segura**: Límites y validaciones
+1. Separación de responsabilidades: Cada módulo tiene una función específica
+2. Manejo asíncrono: Todas las operaciones de BD son async/await
+3. Validación robusta: Pydantic con validadores personalizados
+4. Gestión de conexiones: Conexión/desconexión correcta a MongoDB
+5. Manejo de errores: Excepciones personalizadas y globales
+6. Configuración centralizada: Variables de entorno y settings
+7. Logging estructurado: Logs en archivo y consola
+8. Documentación: Docstrings y documentación automática
+9. Tipado estático: Type hints en todo el código
+10. Paginación segura: Límites y validaciones
 
-## 🚨 Producción
+## Producción
 
 Para producción, considera:
 
@@ -202,6 +202,5 @@ Para producción, considera:
 8. Configurar CORS específicos
 
 DB mongo
-
 shenryvladimil
 ofuvzitMI9psOBrB
