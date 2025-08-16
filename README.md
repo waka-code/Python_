@@ -139,7 +139,7 @@ curl -X PUT "http://localhost:8000/api/v1/items/{id}" \
 
 ```env
 # MongoDB Atlas - Configuración en la nube
-MONGODB_URL=mongodb+srv://shenryvladimil:ofuvzitMI9psOBrB@cluster0.nsx1xav.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+MONGODB_URL
 DATABASE_NAME=fastapi_db
 
 # Configuración de la aplicación
@@ -188,6 +188,3 @@ Para probar la API:
 9. Tipado estático: Type hints en todo el código
 10. Paginación segura: Límites y validaciones
 
-DB mongo
-shenryvladimil
-ofuvzitMI9psOBrB
