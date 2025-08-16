@@ -1,6 +1,6 @@
 # FastAPI CRUD + MongoDB Atlas
 
-API RESTful completa con FastAPI, MongoDB Atlas y mejores prácticas de desarrollo.
+API RESTful completa con FastAPI, MongoDB Atlas.
 
 ## ESTADO ACTUAL: COMPLETAMENTE FUNCIONAL
 
